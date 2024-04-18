@@ -1,7 +1,7 @@
 /* 모바일 레이아웃 */
 @media (max-width: 768px) {
     .container {
-        width: 90%; /* 모바일 화면에 대응하여 컨테이너 너비 조정 */
+        width: 60%; /* 모바일 화면에 대응하여 컨테이너 너비 조정 */
     }
 
     #showcase {
