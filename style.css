@@ -1,0 +1,231 @@
+/* 모바일 레이아웃 */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* 모바일 화면에 대응하여 컨테이너 너비 조정 */
+    }
+
+    #showcase {
+        text-align: center;
+    }
+
+    .study_img {
+        flex-direction: column; /* 모바일에서 세로로 배치 */
+        gap: 20px; /* 모바일에서 요소 간의 간격 조정 */
+    }
+
+    .study_img .link {
+        margin-bottom: 20px; /* 모바일에서 요소 간의 간격 조정 */
+    }
+
+    /* 추가적으로 필요한 스타일링 작성 */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* 폰트 변경 */
+    padding: 0;
+    margin: 0;
+    background-image: url("https://img.freepik.com/free-vector/blue-and-pink-halftone-background_53876-99004.jpg?w=996&t=st=1713418583~exp=1713419183~hmac=72d3d873d92af8f142705384f1ee6d7a6e574964307609388ce12c3a59348604");
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.team_img {
+    display: flex;
+    gap: 120px;
+}
+
+.team_img img {
+    width: 200px;
+    transition: transform 0.3s ease; /* transform 속성에 대한 트랜지션 적용 */
+}
+
+.team_img img:hover {
+    transform: scale(1.2); /* 호버 시 이미지 크기 확대 */
+}
+
+.link:hover {
+    display: grid;
+    color: #845f55;
+}
+
+/*study*/
+
+.study_img {
+    display: flex;
+    gap: 120px;
+}
+
+.study_img a {
+    width: 200px;
+}
+
+.study_img img {
+    width: 200px;
+}
+
+ul {
+    margin: 0;
+    padding: 0; /*기본값 초기화*/
+}
+
+/* Header  */
+header {
+    background-color: #35424a;
+    color: rgb(229, 189, 189);
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #845f55 3px solid;
+}
+
+header a {
+    color: rgb(149, 79, 79);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+header li {
+    display: inline;
+    padding: 0 10px;
+    float: left;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+    color: #e0e05b;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #aaaaaa;
+    font-weight: bold;
+}
+
+/*table*/
+
+table {
+    font-size: 10px;
+    border-collapse: collapse;
+    margin-left: 50px;
+}
+
+th,
+td {
+    font-size: 14px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(241, 182, 8);
+}
+
+th {
+    background-color: rgb(233, 196, 152);
+}
+
+/* Showcase */
+#showcase {
+    min-height: 80vh;
+    height: 100%;
+    text-align: center;
+    color: rgb(23, 61, 84);
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+.button_1 {
+    height: 38px;
+    background-color: #bedf75;
+    border: 0;
+    padding: 0 20px;
+    color: white;
+}
+
+/* Boxes */
+
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img {
+    width: 100px;
+}
+
+/*secon2024*/
+
+.secon2024 {
+    width: 1100px;
+}
+
+/* Footer */
+footer {
+    color: white;
+    background-image: url("https://img.freepik.com/free-vector/blue-and-pink-halftone-background_53876-99004.jpg?w=996&t=st=1713418583~exp=1713419183~hmac=72d3d873d92af8f142705384f1ee6d7a6e574964307609388ce12c3a59348604");
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    margin-top: 5vh;
+    min-height: 5vh;
+}
+
+.ms {
+    text-align: right;
+}
+
+.ms a {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 0.8em;
+    width: 50px;
+}
+
+#showcase h1 {
+    margin-top: 30px;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+header {
+    padding-bottom: 20px;
+}
+
+#submit {
+    border: 2px solid rgb(83, 40, 75);
+}
+
+/* 폰트 */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 추가적인 스타일링 */
