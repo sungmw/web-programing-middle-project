@@ -1,7 +1,13 @@
+/*폰트*/
+* {
+    font-family: "Sunflower", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
 /* 모바일 레이아웃 */
 @media (max-width: 768px) {
     .container {
-        width: 90%;
+        width: 50%;
     }
     #showcase {
         text-align: center;
