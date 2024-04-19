@@ -4,11 +4,13 @@
     font-weight: 300;
     font-style: normal;
 }
+
 /* 모바일 레이아웃 */
 @media (max-width: 768px) {
     .container {
         width: 50%;
     }
+
     #showcase {
         text-align: center;
     }
@@ -17,21 +19,26 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        align-items: center; /* 요소들을 가운데 정렬 */
+        align-items: center;
+        /* 요소들을 가운데 정렬 */
     }
 
     .study_img .link {
         margin-bottom: 20px;
-        text-align: center; /* 텍스트를 중앙 정렬 */
+        text-align: center;
+        /* 텍스트를 중앙 정렬 */
+        overflow-x: auto;
     }
-    /* 추가적으로 필요한 스타일링 작성 */
+
+    footer {
+        width: 50%;
+    }
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* 폰트 변경 */
     padding: 0;
     margin: 0;
-    background-image: url("https://img.freepik.com/free-vector/blue-and-pink-halftone-background_53876-99004.jpg?w=996&t=st=1713418583~exp=1713419183~hmac=72d3d873d92af8f142705384f1ee6d7a6e574964307609388ce12c3a59348604");
+    background-color: #c3dafd45;
     background-size: cover;
 }
 
@@ -40,6 +47,21 @@ body {
     margin: auto;
 }
 
+.container .study li a {
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #88a6c9; /* 배경색 추가 */
+    border-radius: 10px; /* 둥근 테두리를 위해 border-radius 추가 */
+    transition: background-color 2s, color;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    /*기본값 초기화*/
+}
+
+/* team */
 .team_img {
     display: flex;
     gap: 120px;
@@ -47,17 +69,21 @@ body {
 
 .team_img img {
     width: 200px;
-    transition: transform 0.3s ease; /* transform 속성에 대한 트랜지션 적용 */
+    transition: transform 0.3s ease;
+    /* transform 속성에 대한 트랜지션 적용 */
 }
 
 .team_img img:hover {
-    transform: scale(1.2); /* 호버 시 이미지 크기 확대 */
+    transform: scale(1.2);
+    /* 호버 시 이미지 크기 확대 */
 }
 
 .link:hover {
     display: grid;
-    color: #845f55;
+    color: #e1afa0;
 }
+
+
 
 /*study*/
 
@@ -74,29 +100,26 @@ body {
     width: 200px;
 }
 
-ul {
-    margin: 0;
-    padding: 0; /*기본값 초기화*/
-}
 
 /* Header  */
 header {
-    background-color: #35424a;
-    color: rgb(229, 189, 189);
+    background-color: #9eceec;
+    background: linear-gradient(45deg, #F8F6E3, #7AA2E3);
+    color: rgb(0, 0, 0);
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #845f55 3px solid;
+    border-bottom: #645f34 3px solid;
 }
 
 header a {
-    color: rgb(149, 79, 79);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 17px;
 }
 
 header li {
-    display: block;
-    padding: 10px 0;
+    display: flex;
+    padding: 5px 0;
 }
 
 header #branding {
@@ -105,6 +128,7 @@ header #branding {
 
 header #branding h1 {
     margin: 0;
+    font-size: 50px;
 }
 
 header nav {
@@ -116,14 +140,21 @@ header nav {
 
 header .highlight,
 header .current a {
-    color: #e0e05b;
+    color: #000000;
     font-weight: bold;
 }
 
+/* a */
+
 a:hover {
-    color: #aaaaaa;
     font-weight: bold;
 }
+
+a:active {
+    font-weight: bold;
+    color: rgb(215, 53, 53);
+}
+
 
 /*table*/
 
@@ -139,11 +170,11 @@ td {
     border: 2px solid rgb(0, 0, 0);
     padding: 15px;
     text-align: center;
-    background-color: rgb(241, 182, 8);
+    background-color: rgb(117, 101, 55);
 }
 
 th {
-    background-color: rgb(233, 196, 152);
+    background-color: rgb(178, 155, 127);
 }
 
 /* Showcase */
@@ -151,7 +182,7 @@ th {
     min-height: 80vh;
     height: 100%;
     text-align: center;
-    color: rgb(23, 61, 84);
+    color: rgb(4, 4, 4);
 }
 
 #showcase h1 {
@@ -164,12 +195,13 @@ th {
     font-size: 20px;
 }
 
-.button_1 {
-    height: 38px;
-    background-color: #bedf75;
-    border: 0;
-    padding: 0 20px;
-    color: white;
+.button_1:hover{
+    font-weight: bold;
+}
+
+.button_1:active{
+    font-weight: bold;
+    color: rgb(34, 122, 42);
 }
 
 /* Boxes */
@@ -192,15 +224,17 @@ th {
 /*secon2024*/
 
 .secon2024 {
-    width: 90%; /* 전체 너비의 90%로 변경 */
-    margin: 20px auto; /* 가운데 정렬 및 위아래 여백 추가 */
+    width: 90%;
+    /* 전체 너비의 90%로 변경 */
+    margin: 20px auto;
+    /* 가운데 정렬 및 위아래 여백 추가 */
 }
 
 /* Footer */
 footer {
-    color: white;
-    background-image: url("https://img.freepik.com/free-vector/blue-and-pink-halftone-background_53876-99004.jpg?w=996&t=st=1713418583~exp=1713419183~hmac=72d3d873d92af8f142705384f1ee6d7a6e574964307609388ce12c3a59348604");
+    color: rgb(3, 3, 3);
     background-size: cover;
+    background-color: #cacfd8;
     text-align: center;
     width: 100%;
     margin-top: 5vh;
@@ -213,9 +247,8 @@ footer {
 
 .ms a {
     display: inline-block;
-    margin-left: 10px;
-    font-size: 0.8em;
-    width: 50px;
+    margin-left: 1px;
+    /* width: 50px; */
 }
 
 
@@ -223,13 +256,6 @@ header {
     padding-bottom: 20px;
 }
 
-#submit {
-    border: 2px solid rgb(83, 40, 75);
+#submit:hover {
+    color: #135d96;
 }
-
-/* 폰트 */
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-/* 추가적인 스타일링 */
