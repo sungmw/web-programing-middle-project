@@ -179,6 +179,10 @@ a:active {
     color: rgb(215, 53, 53);
 }
 
+.link a{
+    transform: scale(1.2);
+}
+
 
 /*table*/
 
