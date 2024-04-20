@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, Main, Footer 세션 */
+    grid-template-columns: 1fr; /* 한 개의 컬럼 */
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    min-height: 2000vh; /* 화면의 최소 높이 설정 */
+}
+
+header {
+    grid-area: header;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3개의 컬럼 */
+    gap: 20px; /* 그리드 아이템 사이의 간격 */
+    padding: 20px;
+}
+
+section {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
